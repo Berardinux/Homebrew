@@ -1,0 +1,21 @@
+## Description
+## How to Use and Prerequisites
+
+Make sure you have the following installed on your system:
+
+- Node.js (https://nodejs.org)
+- Git (https://git-scm.com)
+
+### Clone the Repository
+
+```bash
+$ git clone https://github.com/Berardinux/Homebrew
+$ cd your-repository
+
+Install Dependencies
+$ npm install
+
+Run the Project
+$ npm start
+The project will start, and you can access it by visiting http://localhost:3000 in your web browser.
+
