@@ -21,6 +21,11 @@ if command -v brew &>/dev/null; then
         exit 1
     fi
 else
+    if ! command -v npm &>/dev/null; then
+        echo "npm is not installed. Installing npm..."
+        echo "Cannot automatically install npm. Please install it manually from https://nodejs.org."
+        exit 1
+    fi
     clear
     echo "Would you like to install brew? ( Y / n )"
     read -rp "> " install
@@ -50,7 +55,7 @@ else
             fi
             exit 1
         fi
-
+        
     elif [ $install == "n" ]; then
         echo "Okay, come back next time if you would like to install Homebrew!"
         exit 1
